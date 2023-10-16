@@ -154,3 +154,8 @@ log.txt
 game/cache/bytecode-39.rpyb
 game/cache/py3analysis.rpyb
 game/cache/screens.rpyb
+.vscode/settings.json
+game/cache/screens.rpyb
+game/cache/bytecode-39.rpyb
+game/saves/navigation.json
+game/saves/persistent
