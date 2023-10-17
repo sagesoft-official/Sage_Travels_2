@@ -42,7 +42,9 @@ default label_c102_show = False
 default label_tomato_show = False
 
 label before_main_menu:
+    $ renpy.movie_cutscene("images/trailer.webm")
     scene bridge_day
+    "... ..."
     "今天你检查更新了吗？"
     menu:
         "是":
@@ -332,7 +334,7 @@ label label_choose2:
     menu:
         sage "小生物的心仪作品是？"
 
-        "A.投票给《〔c102〕禁忌！晨宝的体育器材室小秘密♡》":
+        "投票给《〔c102〕禁忌！晨宝的体育器材室小秘密♡》":
             $ choose_b1 = True
             jump label_b1
         "投票给《〔c102〕白色季节里♡温暖晨宝呓语》":
