@@ -21,45 +21,46 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "1.0.2"
+define config.version = "Early_Access"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
 
 define gui.about = _p("""
-制作组：Nya-WSL | 桑吉Sage字幕组
+制作： Nya-WSL
 
-编剧：桑吉Sage
+发行： SageSoft
+
+编剧： 冰蓝IceBlue
+
+美工： 一个不愿意透露姓名的高中生 | 桑吉Sage | 冰蓝IceBlue
 
 Thank you for playing.
 
 希望各位玩家的每一天都是Happy Ending.
 
 
+We are all stories in the end.
+
+But we hope our stories can lasts longer.
+
+Together we make games and memes better.
+
+
 你知道吗：
 
-bgm为《黄昏之时》
-
-现实中真的有楠桐语录
-
-即将推出楠桐语录精装本上册
+bgm为黄昏之时
 
 主题配色是从桑吉头像抽的色
 
-其实我们一直相信桑吉能独立完成这个游戏！
+在预期规划中小生物历险记没有3
 
-大部分主要角色的颜色都是从各自头像抽的色
+其实我们一直相信桑吉能独立完成这个游戏！(除了迷宫)
 
-绝大部分的框架和逻辑代码来自于小生物1重制版
+现实中真的有qqbot版的楠桐语录，还有桑吉语录和小晨语录
 
-主界面标题颜色和部分强调色是从桑吉头发抽色并加深以后的结果
-
-圣诞超市场景的SSR卡在现实中的楠桐语录中是真实存在的，是羊驼随机抽的
-
-最初我们是打算让桑吉配音的，但考虑到游玩环境为直播于是打消了这个念头
-
-在群资本家的鞭策下，羊驼成功在ddl前写完了剧本，并在二周年直播前发布第一个正式版
+所有scene草图均来自冰蓝IceBlue，成图来自一个不愿意透露姓名的高中生（就算快40了也是高中生...吧）
 """)
 
 
@@ -164,14 +165,14 @@ default preferences.afm_time = 15
 ##
 ## 该语句通常不应变更，若要变更，应为有效字符串而不是表达式。
 
-define config.save_directory = "Sage_Travels_2"
+define config.save_directory = "Sage_Travels_2_Early_Access"
 
 
 ## 图标 ##########################################################################
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "gui/window_icon.jpg"
+define config.window_icon = "gui/window_icon (2).png"
 
 
 ## 构建配置 ########################################################################
