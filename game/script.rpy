@@ -129,12 +129,12 @@ label maze:
 
     python:
         import os
-        os.system("game/maze.exe")
+        os.system("maze.exe")
 
     "... ..."
 
     python:
-        if not os.path.exists("game/maze.txt"):
+        if not os.path.exists("maze.txt"):
             maze_status = False
         else:
             maze_status = True
