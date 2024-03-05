@@ -1,6 +1,6 @@
 ﻿define sage = Character("桑吉", color="#E7374E", image="sage")
-define knight = Character("骑士", color="#fda0a5", image="asahi")
-define door = Character("神秘大门", color="#ff0022", image="sage")
+define knight = Character("骑士", color="#fda0a5", image="knight")
+define door = Character("神秘文字", color="#ff0022", image="sage")
 
 image bg main = "main_menu.jpg"
 image bg dream = "dream_1080.png"
@@ -10,7 +10,7 @@ image bg door = "door_1080.png"
 image bg room = "room_1080.png"
 image bg room1 = "room_1_1080.png"
 image side sage = "side_sage.png"
-image side asahi = "side_ly.png"
+image side knight = "side_knight.png"
 
 # label before_main_menu:
 #     $ renpy.movie_cutscene("images/trailer.webm")
