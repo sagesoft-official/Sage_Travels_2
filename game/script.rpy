@@ -1,6 +1,6 @@
 ﻿define sage = Character("桑吉", color="#E7374E", image="sage")
 define knight = Character("骑士", color="#fda0a5", image="knight")
-define door = Character("神秘文字", color="#ff0022", image="sage")
+define door = Character("神秘文字", color="#E7374E")
 
 image bg main = "main_menu.jpg"
 image bg dream = "dream_1080.png"
@@ -25,7 +25,6 @@ image side knight = "side_knight.png"
 
 label start:
     scene bg main
-    play music "<from 13>audio/1.mp3"
 
     "请选择游玩的章节"
     menu:
@@ -49,6 +48,7 @@ label label_overture:
     jump label_dream
 
 label label_dream:
+    play music "audio/dream.mp3"
     "战争，战争永不改变，从她记事起，本国对外的战争就没有停歇过，与侵略战争不同的是，他们打的都是自卫反击战"
     "作为整片大陆最边缘的国度，国家的西面南面都面临着那些荒野蛮子的威胁，而临近国度也一直对他们虎视眈眈"
     "而就在他们与邻国签订百年不侵犯条约的第十三年，邻国撕毁了条约，恬不知耻的与蛮子联手，妄图将他们消灭后平分领地，战争，再次打响。"
@@ -69,6 +69,7 @@ label label_dream:
     "随着再一次的进军，域外的蛮子彻底溃败，他们本以为能就此安歇一段时间。"
     "但，某天，莫名的裂缝在全国各地出现，大大小小不计其数，紧接着，某种类人生物从那裂缝中爬出，大肆屠杀着"
     "直到某天，那耀眼的白光从太阳升起处绽放，一切的一切，都化作了泡影"
+    play music "<from 28>audio/dream_1.mp3"
     "祖父" "你本该随我一同去死"
     #"化为白骨的祖父这样吼着"
     "国民" "你本该拯救我们！你是我们最后的希望！为什么要逃！"
@@ -85,6 +86,7 @@ label dream_end:
     knight "没什么，只是做了一场噩梦。"
     "听到那个声音，她的心情镇定了一些。"
     "就在白光闪过后，世界如雪花般崩坏，就在她以为自己在劫难逃的时候，精神一阵恍惚，等她反应过来，已经来到了这里。"
+    play music "audio/maze.mp3"
     scene maze1
     "一处洞穴，在她面前的是一座迷宫，洞穴并没有出口，所以除了向迷宫内前进之外，她没有别的出路。"
     "检查了一下随身装备，除了本身就携带的剑盾和穿戴的甲胄之外，多了一些水和干粮。"
@@ -148,7 +150,7 @@ label maze:
                 return
 
     "从迷宫走出的瞬间，刺眼的光芒晃得她不禁眯起了双眼，好一会才看清眼前的情况。"
-    scene bg room
+    scene bg room1
     "那是一个灯火通明的大厅，遍布各处的魔法灯将这里映照得恍若白昼。"
     "大厅的中间是一张长条形的桌子，桌子上摆满了各式山珍海味，见过的没见过的应有尽有，桌子的旁边放着一把椅子。"
     scene bg door

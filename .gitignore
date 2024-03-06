@@ -159,3 +159,6 @@ game/saves/*
 *.bak
 *.save
 game/tl/None/common.rpymc
+*.rpyc
+update.pem
+traceback.txt

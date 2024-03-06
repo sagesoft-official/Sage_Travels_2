@@ -1,11 +1,4 @@
-﻿/*
- * @Author: Nya-WSL
- * Copyright © 2024 by Nya-WSL All Rights Reserved. 
- * @Date: 2024-03-06 00:41:03
- * @LastEditors: 狐日泽
- * @LastEditTime: 2024-03-06 00:46:34
- */
-## 此文件包含有可自定义您游戏的设置。
+﻿## 此文件包含有可自定义您游戏的设置。
 ##
 ## 以“##”开头的语句是注释，您不应该对其取消注释。以“#”开头的语句是注释掉的代码，
 ## 在适用的时候您可能需要对其取消注释。
@@ -28,7 +21,7 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "Early_Access"
+define config.version = "Early_Access_1.1.0"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
@@ -70,6 +63,8 @@ bgm为黄昏之时
 骑士的画师是冰蓝IceBlue
 
 所有场景的草图均来自冰蓝IceBlue，成图来自一个不愿意透露姓名的高中生（就算快40了也是高中生...吧）
+
+某个角色名字的hex值和桑吉是一样的，或许这意味着什么...
 """)
 
 
@@ -99,7 +94,7 @@ define config.has_voice = True
 ## 将以下语句取消注释就可以设置标题界面播放的背景音乐文件。此文件将在整个游戏中
 ## 持续播放，直至音乐停止或其他文件开始播放。
 
-define config.main_menu_music = "1.mp3"
+define config.main_menu_music = "main.mp3"
 
 
 ## 转场 ##########################################################################

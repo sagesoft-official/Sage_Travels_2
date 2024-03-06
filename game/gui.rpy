@@ -59,10 +59,10 @@ define gui.interface_text_color = '#404040'
 define gui.text_font = "cjkFonts_allseto_v1.11.ttf"
 
 ## 角色名称使用的字体。
-define gui.name_text_font = "壱城ラウラフォント.otf"
+define gui.name_text_font = "方正小篆体.ttf"
 
 ## 游戏外文本使用的字体。
-define gui.interface_text_font = "LanaPixel.ttf"
+define gui.interface_text_font = "包图小白体.ttf"
 
 ## 普通对话文本的大小。
 define gui.text_size = 33
