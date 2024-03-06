@@ -50,8 +50,6 @@ Together we make games and memes better.
 
 你知道吗：
 
-bgm为黄昏之时
-
 主题配色是从桑吉头像抽的色
 
 在目前的规划中小生物历险记没有3
