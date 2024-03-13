@@ -21,24 +21,59 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "Early_Access_1.1.0"
+define config.version = "Early_Access_α"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
+
+# define gui.about = _p("""
+# 制作： Nya-WSL
+
+# 发行： SageSoft
+
+# 编剧： 冰蓝IceBlue
+
+# 美工： 一个不愿意透露姓名的高中生 | 桑吉Sage | 冰蓝IceBlue
+
+# Thank you for playing.
+
+# 希望各位玩家的每一天都是Happy Ending.
+
+
+# 你知道吗：
+
+# 主题配色是从桑吉头像抽的色
+
+# 在目前的规划中小生物历险记没有3
+
+# 其实我们一直相信桑吉能独立完成这个游戏！(除了几个小游戏)
+
+# 骑士的画师是冰蓝IceBlue
+
+# 所有场景的草图均来自冰蓝IceBlue，成图来自一个不愿意透露姓名的高中生（就算快40了也是高中生...吧）
+
+# 某个角色名字的hex值和桑吉是一样的，或许这意味着什么...
+
+
+# We are all stories in the end.
+
+# But we hope our stories can lasts longer.
+
+# Together we make games and memes better.
+# """)
 
 define gui.about = _p("""
 制作： Nya-WSL
 
 发行： SageSoft
 
-编剧： 冰蓝IceBlue
-
-美工： 一个不愿意透露姓名的高中生 | 桑吉Sage | 冰蓝IceBlue
-
 Thank you for playing.
 
 希望各位玩家的每一天都是Happy Ending.
+
+
+α版本为小游戏和功能测试合集，没有剧情
 
 
 We are all stories in the end.
@@ -46,23 +81,6 @@ We are all stories in the end.
 But we hope our stories can lasts longer.
 
 Together we make games and memes better.
-
-
-你知道吗：
-
-主题配色是从桑吉头像抽的色
-
-在目前的规划中小生物历险记没有3
-
-其实我们一直相信桑吉能独立完成这个游戏！(除了迷宫)
-
-现实中真的有qqbot版的楠桐语录，还有桑吉语录和小晨语录
-
-骑士的画师是冰蓝IceBlue
-
-所有场景的草图均来自冰蓝IceBlue，成图来自一个不愿意透露姓名的高中生（就算快40了也是高中生...吧）
-
-某个角色名字的hex值和桑吉是一样的，或许这意味着什么...
 """)
 
 
