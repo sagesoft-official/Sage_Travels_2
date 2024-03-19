@@ -1,10 +1,10 @@
-default choose_a1 = False
-default choose_a2 = False
-default choose_b1 = False
-default choose_b2 = False
-default choose_c1 = False
-default choose_c2 = False
-default label_airport_show = False
+default choice_p1_a1 = False
+default choice_p1_a2 = False
+default choice_p1_b1 = False
+default choice_p1_b2 = False
+default choice_p1_c1 = False
+default choice_p1_c2 = False
+default label_p1_airport_show = False
 default label_company_show = False
 default label_market_show = False
 
@@ -25,7 +25,7 @@ menu:
     sage "去哪里调查人类？"
 
     "机场":
-        jump label_airport
+        jump label_p1_airport
 
     "公司":
         jump label_company
@@ -33,9 +33,9 @@ menu:
     "菜市场":
         jump label_market
 
-label label_airport:
+label label_p1_airport:
     scene airport
-    $ label_airport_show = True
+    $ label_p1_airport_show = True
 
     "小生物来到了一处机场"
     show sage_i at left
@@ -86,7 +86,7 @@ label label_airport:
     ly "为什么会这样呢...一边是喜欢的晨宝，一边是水群的朋友，为什么..."
     ly "....不甘心，不甘心，不甘心...呜..."
     ly "...我...我应该怎么做..."
-    jump label_choose1
+    jump label_p1_choice1
 
 label label_company:
     scene company
@@ -136,7 +136,7 @@ label label_company:
     "(员工)露鸢" "比起可怜她，我想先问一下我们能挂她吗？"
     "(员工)殷红" "我也觉得该挂啊兄弟们。"
     "(员工)猫店长" "不太好吧，好歹过两天再挂。和G先生挂一起岂不是更好。"
-    jump label_choose2
+    jump label_p1_choice2
 
 label label_market:
     scene market
@@ -182,9 +182,9 @@ label label_market:
     o27 "凡事都讲先来后到，但是这位的理由确实又感人。可惜我这只有一条鱼呢..."
     o27 "要卖给谁好呢？"
     "老板似乎陷入了犹豫之中。"
-    jump label_choose3
+    jump label_p1_choice3
 
-label label_end:
+label p1_end:
     scene sky
     "太阳落山了，小生物的人类调查到此结束。"
     show sage_i at left
@@ -192,7 +192,7 @@ label label_end:
     hide sage_i
     "它回到了自己的桥洞，开始回想自己今天的经历。"
     "今天是非常漫长的一天，它回想起了自己在旅途之中所下的决心——"
-    if choose_a1 and choose_b1 and choose_c1:
+    if choice_p1_a1 and choice_p1_b1 and choice_p1_c1:
         "... ..."
         "... ..."
         show sage_i at left
@@ -218,7 +218,7 @@ label label_end:
         "点击返回主界面"
         return
 
-    elif choose_a2 and choose_b2 and choose_c2:
+    elif choice_p1_a2 and choice_p1_b2 and choice_p1_c2:
         "... ..."
         "... ..."
         show sage_i at left
@@ -259,43 +259,43 @@ label label_end:
         "点击返回主界面"
         return
 
-label label_choose1:
+label label_p1_choice1:
 
     menu:
         sage "此时我应该...？"
 
         "劝说六翼放弃晨宝":
-            $ choose_a1 = True
-            jump label_a1
+            $ choice_p1_a1 = True
+            jump label_p1_a1
         "劝说六翼继续追求晨宝":
-            $ choose_a2 = True
-            jump label_a2
+            $ choice_p1_a2 = True
+            jump label_p1_a2
 
-label label_choose2:
+label label_p1_choice2:
 
     menu:
         sage "此时我应该...？"
 
         "安慰冰蓝":
-            $ choose_b1 = True
-            jump label_b1
+            $ choice_p1_b1 = True
+            jump label_p1_b1
         "和员工一起挂冰蓝":
-            $ choose_b2 = True
-            jump label_b2
+            $ choice_p1_b2 = True
+            jump label_p1_b2
 
-label label_choose3:
+label label_p1_choice3:
 
     menu:
         sage "此时我应该劝说老板...？"
 
         "把王靳鱼卖给红白":
-            $ choose_c1 = True
-            jump label_c1
+            $ choice_p1_c1 = True
+            jump label_p1_c1
         "把王靳鱼卖给袭秋":
-            $ choose_c2 = True
-            jump label_c2
+            $ choice_p1_c2 = True
+            jump label_p1_c2
 
-label label_a1:
+label label_p1_a1:
     show sage_i at left
     sage "爱情想必是强求不来的东西。"
     sage "或许放弃对于双方来说才是最好的选择。"
@@ -314,12 +314,12 @@ label label_a1:
     "【获得道具：六翼的好人卡*1】"
     "小生物大受感动。"
     "离开机场时，它暗自发誓，要成为一个能够守护楠桐之悲恋的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_a2:
+label label_p1_a2:
     show sage_i at left
     sage "既然不甘心，既然痛苦。"
     sage "那就应当拿出行动，继续努力。"
@@ -337,12 +337,12 @@ label label_a2:
     "【获得道具：楠桐六翼的认可*1】"
     "小生物大受感动。"
     "离开机场时，它暗自发誓，要成为一个能够守护楠桐之执恋的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_b1:
+label label_p1_b1:
     show sage_i at left
     sage "即便是邪恶的资本家，也拥有追求爱情的权力。"
     sage "即使是罪恶的资本家，在感到悲伤时也应被温柔以待。"
@@ -358,12 +358,12 @@ label label_b1:
     bl "今天签合同还送不锈钢大铁盆和牙刷牙杯，以后在公司打地铺加班的时候就更方便了。"
     "收到邀请的小生物大受感动。"
     "离开公司时，它暗自发誓，要成为一个能够充满打工之力的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_b2:
+label label_p1_b2:
     show sage_i at left
     sage "正义理应得到伸张。"
     sage "被压迫的打工人们渴望自由，渴望处刑为他们带来痛苦的源头。"
@@ -377,12 +377,12 @@ label label_b2:
     bl "快停下，没了我，你们连工作都没有——"
     "这次团结的经历让小生物大受感动。"
     "离开机场时，它暗自发誓，要成为一个能够守护打工人的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_c1:
+label label_p1_c1:
     show sage_i at left
     sage "先来后到，遵守规则。"
     sage "把这条鱼让给先来的人吧，况且他家人生日这样的时机，要是有了这样的好食材，可谓锦上添花。"
@@ -398,12 +398,12 @@ label label_c1:
     "小生物想着这一点，露出了笑容。"
     "离开菜市场时，小生物暗暗发誓。"
     "它一定要成为一个守护规则的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_c2:
+label label_p1_c2:
     show sage_i at left
     sage "即使是人和鱼的感情也是伟大的。"
     sage "这份爱情虽然不为世人所容，但是它的真挚却无可否认。"
@@ -421,20 +421,20 @@ label label_c2:
     "青年捧着王靳鱼，开心地离开了。"
     "小生物大受感动。"
     "离开菜市场时，它暗自发誓，要成为一个能够守护超越人类之恋的人。"
-    if label_airport_show and label_company_show and label_market_show:
-        jump label_end
+    if label_p1_airport_show and label_company_show and label_market_show:
+        jump p1_end
     else:
-        jump label_choose_label
+        jump label_p1_choice_label
 
-label label_choose_label:
+label label_p1_choice_label:
     "......"
     "......"
 
     menu:
         sage "去哪里调查人类？"
 
-        "机场" if not label_airport_show:
-            jump label_airport
+        "机场" if not label_p1_airport_show:
+            jump label_p1_airport
 
         "公司" if not label_company_show:
             jump label_company
