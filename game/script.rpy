@@ -1,5 +1,5 @@
 ﻿define asahi = Character("小晨", color="#fda0a5", image="asahi")
-define bf = Character("毕方", color="#fcce9a", image="bf")
+define bf = Character("毕方", color="#ff5623", image="bf")
 define ly = Character("六翼", color="#a4faa1", image="ly")
 define bl = Character("冰蓝", color="#95f3ff", image="bl")
 define jj = Character("江江", color="#728A6A", image="jj")
@@ -23,6 +23,7 @@ define knight = Character("骑士", color="#fda0a5", image="knight")
 define door = Character("神秘文字", color="#E7374E")
 
 image sage_i = "sage.png"
+
 image side asahi = "side_asahi.png"
 image side bf = "side_bf.png"
 image side ly = "side_ly.png"
@@ -53,9 +54,21 @@ image bg door = "door_1080.png"
 image bg room = "room_1080.png"
 image bg room1 = "room_1_1080.png"
 
+label splashscreen:
+    scene black
+    with Pause(1)
+    show splash1 with dissolve
+    with Pause(3)
+    scene black with dissolve
+    with Pause(1)
+    scene splash2 with dissolve
+    with Pause(3)
+    scene black with dissolve
+    with Pause(2)
+    $ renpy.movie_cutscene("images/op.webm")
+    return
 
 # label before_main_menu:
-#     $ renpy.movie_cutscene("images/trailer.webm")
 #     scene bridge_day
 #     "... ..."
 #     "今天你检查更新了吗？"

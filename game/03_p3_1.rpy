@@ -1,5 +1,6 @@
 label label_maze:
     scene bg maze1
+    "注：本章节目前为玩法测试，所有内容均不代表正传，有关内容请以正式版为准"
     knight "我们开始吧，朋友，已经拖了太久了"
     jump maze
 
@@ -35,8 +36,8 @@ label maze:
 
         user_step = 0
         c1_status = 0
-        c1_step = random.randint(5,10)
-        maze_step = random.randint(25,60)
+        c1_step = random.randint(10,15)
+        maze_step = random.randint(30,40)
         while user_step < maze_step:
             narrator("往哪个方向走？")
             result = renpy.display_menu([("向前走", 1), ("向左走", 2), ("向右走", 3)])
@@ -50,7 +51,9 @@ label maze:
 
             if user_step > 3:
                 check()
-            user_step += maze_event_steps
+                user_step += maze_event_steps
+            else:
+                user_step += 1
 
             if user_step <= 0:
                 user_step = 0
