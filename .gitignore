@@ -162,3 +162,4 @@ game/tl/None/common.rpymc
 *.rpyc
 update.pem
 traceback.txt
+errors.txt
