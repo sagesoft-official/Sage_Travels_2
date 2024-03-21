@@ -1,10 +1,6 @@
-label label_maze:
-    scene bg maze1
-    "注：本章节目前为玩法测试，所有内容均不代表正传，有关内容请以正式版为准"
-    knight "我们开始吧，朋友，已经拖了太久了"
-    jump maze
-
 label maze:
+
+    knight "我们开始吧，朋友，已经拖了太久了"
 
     python:
         import random

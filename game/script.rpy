@@ -55,6 +55,7 @@ image bg room = "room_1080.png"
 image bg room1 = "room_1_1080.png"
 
 label splashscreen:
+    # $ updater.update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
     scene black
     with Pause(1)
     show splash1 with dissolve
@@ -68,16 +69,6 @@ label splashscreen:
     $ renpy.movie_cutscene("images/op.webm")
     return
 
-# label before_main_menu:
-#     scene bridge_day
-#     "... ..."
-#     "今天你检查更新了吗？"
-#     menu:
-#         "是":
-#             return
-#         "否":
-#             $ updater.update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
-
 label start:
     scene bg main
 
@@ -87,7 +78,7 @@ label start:
             jump p1_start
         "第二章":
             jump p2_start
-        "迷宫":
-            jump label_maze
+        "第三章":
+            jump label_p3
         "返回主界面":
             return
