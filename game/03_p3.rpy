@@ -9,6 +9,6 @@ label label_p3:
         "消消乐":
             jump xxl
         "扫雷":
-            jump maze
+            jump MineSweep
         "章节选择":
             jump start
