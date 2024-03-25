@@ -220,6 +220,10 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('game/**.psd', None)
+    build.classify('game/pygame**', None)
+    build.classify('game/cache**', None)
+    build.classify('game/*.rpy', None)
 
     ## 若要封装文件，需将其列为“archive”。
 
@@ -227,7 +231,8 @@ init python:
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.webm', 'archive')
     build.classify('game/**.mp3', 'archive')
-    build.classify('game/**.psd', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/fonts**', 'archive')
 
     ## 匹配为文档模式的文件会在 Mac 应用程序构建中被复制，因此它们同时出现在 APP
     ## 和 ZIP 文件中。
