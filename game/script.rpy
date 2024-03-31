@@ -74,6 +74,8 @@ label start:
 
     "请选择游玩的章节"
     menu:
+        "设定集":
+            jump art_of
         "第一章":
             jump p1_start
         "第二章":
