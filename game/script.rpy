@@ -58,11 +58,11 @@ label splashscreen:
     # $ updater.update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
     scene black
     with Pause(1)
-    show splash1 with dissolve
+    show splash2 with dissolve
     with Pause(3)
     scene black with dissolve
     with Pause(1)
-    scene splash2 with dissolve
+    scene splash1 with dissolve
     with Pause(3)
     scene black with dissolve
     with Pause(2)
