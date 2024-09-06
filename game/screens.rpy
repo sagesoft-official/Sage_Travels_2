@@ -3,7 +3,7 @@
 ################################################################################
 
 init offset = -1
-image main_menu = Movie(play="images/main_menu.webm")
+image main_menu = "images/main_menu.jpg"
 
 ################################################################################
 ## 样式
@@ -298,8 +298,8 @@ screen navigation():
 
         textbutton _("读取游戏") action ShowMenu("load")
 
-        if renpy.variant("pc"):
-            textbutton _("检查更新") action updater.Update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
+        # if renpy.variant("pc"):
+        #     textbutton _("检查更新") action updater.Update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
 
         textbutton _("设置") action ShowMenu("preferences")
 
@@ -550,7 +550,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("引擎：{a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]\n\n{a=https://nya-wsl.com}Nya-WSL{/a} | {a=https://space.bilibili.com/106415}桑吉Sage{/a}")
+            text _("引擎：{a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only]\n\n{a=https://nya-wsl.com}Nya-WSL{/a} | {a=https://sagesoft.ltd/}SageSoft{/a}")
 
 
 style about_label is gui_label

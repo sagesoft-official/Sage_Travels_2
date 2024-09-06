@@ -21,45 +21,64 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "1.0.2"
+define config.version = "Early_Access_α_v0.4.0"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
 ## 行。
 
 define gui.about = _p("""
-制作组：Nya-WSL | 桑吉Sage字幕组
+制作： Nya-WSL
 
-编剧：桑吉Sage
+发行： SageSoft
 
-Thank you for playing.
+编剧： 桑吉Sage（第一、二章） | 冰蓝IceBlue（第三章）
 
-希望各位玩家的每一天都是Happy Ending.
+美术：桑吉Sage | 冰蓝IceBlue | 一个不愿意透露姓名的高中生
 
 
 你知道吗：
 
-bgm为《黄昏之时》
+第一章和第二章bgm为《黄昏之时》
 
 现实中真的有楠桐语录
 
-即将推出楠桐语录精装本上册
-
-主题配色是从桑吉头像抽的色
-
-其实我们一直相信桑吉能独立完成这个游戏！
-
 大部分主要角色的颜色都是从各自头像抽的色
-
-绝大部分的框架和逻辑代码来自于小生物1重制版
 
 主界面标题颜色和部分强调色是从桑吉头发抽色并加深以后的结果
 
-圣诞超市场景的SSR卡在现实中的楠桐语录中是真实存在的，是羊驼随机抽的
+第二章圣诞超市场景的SSR卡是羊驼在楠桐语录中随手抽的
 
-最初我们是打算让桑吉配音的，但考虑到游玩环境为直播于是打消了这个念头
+这个游戏的原始版本是纯DOS窗口的文字游戏
 
-在群资本家的鞭策下，羊驼成功在ddl前写完了剧本，并在二周年直播前发布第一个正式版
+第一章是22年的小生物1，第二章是23年的小生物2
+
+小生物在不换引擎的情况下不会出3
+
+其实我们一直相信桑吉能独立完成这个游戏！(除了几个小游戏)
+
+骑士的画师是冰蓝IceBlue
+
+第三章使用了大量的新功能和新机制
+
+第三章所有场景的草图均来自冰蓝IceBlue，成图来自一个不愿意透露姓名的高中生（就算快40了也是高中生...吧）
+
+每一章的代码行数都会比前一章更多
+
+第一章和第二章都只写了一个脚本文件，但因为第三章过于复杂，我们不得不拆分为多个文件
+
+我们计划将在每年的3月发布一个新的DLC，内容包括但不限于正传序章或与正传毫无关系的剧情
+
+
+Together we make games and memes better.
+
+We are all stories in the end.
+
+But we hope our stories can lasts longer.
+
+Thank you for playing.
+
+希望各位玩家的每一天都是Happy Ending.
 """)
 
 
@@ -89,7 +108,7 @@ define config.has_voice = True
 ## 将以下语句取消注释就可以设置标题界面播放的背景音乐文件。此文件将在整个游戏中
 ## 持续播放，直至音乐停止或其他文件开始播放。
 
-define config.main_menu_music = "1.mp3"
+define config.main_menu_music = "main.mp3"
 
 
 ## 转场 ##########################################################################
@@ -164,14 +183,14 @@ default preferences.afm_time = 15
 ##
 ## 该语句通常不应变更，若要变更，应为有效字符串而不是表达式。
 
-define config.save_directory = "Sage_Travels_2"
+define config.save_directory = "Sage_Travels_2_Early_Access"
 
 
 ## 图标 ##########################################################################
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "gui/window_icon.jpg"
+define config.window_icon = "gui/window_icon (2).png"
 
 
 ## 构建配置 ########################################################################
@@ -201,6 +220,10 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('game/**.psd', None)
+    build.classify('game/pygame**', None)
+    build.classify('game/cache**', None)
+    build.classify('game/*.rpy', None)
 
     ## 若要封装文件，需将其列为“archive”。
 
@@ -208,7 +231,8 @@ init python:
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.webm', 'archive')
     build.classify('game/**.mp3', 'archive')
-    build.classify('game/**.psd', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/fonts**', 'archive')
 
     ## 匹配为文档模式的文件会在 Mac 应用程序构建中被复制，因此它们同时出现在 APP
     ## 和 ZIP 文件中。
