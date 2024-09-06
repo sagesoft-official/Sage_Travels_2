@@ -164,3 +164,4 @@ update.pem
 traceback.txt
 errors.txt
 /game/tl/None
+*.rpyc
