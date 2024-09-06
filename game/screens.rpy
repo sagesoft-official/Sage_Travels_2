@@ -3,7 +3,7 @@
 ################################################################################
 
 init offset = -1
-image main_menu = "images/main_menu.jpg"
+image main_menu = "images/main_menu.png"
 
 ################################################################################
 ## 样式
@@ -300,6 +300,8 @@ screen navigation():
 
         # if renpy.variant("pc"):
         #     textbutton _("检查更新") action updater.Update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
+
+        textbutton _("设定集") action Start("art_of")
 
         textbutton _("设置") action ShowMenu("preferences")
 

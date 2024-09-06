@@ -46,13 +46,9 @@ image side rock = "side_rock.png"
 image side sage = "side_sage3.png"
 image side knight = "side_knight.png"
 
-image bg main = "main_menu.jpg"
-image bg dream = "dream_1080.png"
-image bg maze = "maze.png"
-image bg maze1 = "maze1_1080.png"
-image bg door = "door_1080.png"
-image bg room = "room_1080.png"
-image bg room1 = "room_1_1080.png"
+image bg main = "main_menu.png"
+image bg gym = "gym.jpg"
+
 
 label splashscreen:
     # $ updater.update("http://game.sage.osttsstudio.ltd/st2/updates.json", base=None, force=False, public_key=None, simulate=None, add=[], restart=True, confirm=True, patch=True)
@@ -71,16 +67,14 @@ label splashscreen:
 
 label start:
     scene bg main
-
-    "请选择游玩的章节"
     menu:
         "设定集":
             jump art_of
-        "第一章":
+        "第一章 - 教堂修女":
             jump p1_start
-        "第二章":
+        "第二章 - 人类的意义":
             jump p2_start
-        "第三章":
-            jump label_p3
+        "第三章 - 人类观察日记":
+            jump p3_start
         "返回主界面":
             return

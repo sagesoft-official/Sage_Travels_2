@@ -25,7 +25,7 @@ define config.check_conflicting_properties = True
 ## 界面中文本的颜色。
 
 ## 整个界面中使用的强调色，用于标记和突出显示文本。
-define gui.accent_color = '#ffc760'
+define gui.accent_color = '#E7374E'
 
 ## 当文本按钮既未被选中也未被悬停时使用的颜色。
 define gui.idle_color = '#707070'
@@ -59,7 +59,7 @@ define gui.interface_text_color = '#404040'
 define gui.text_font = "cjkFonts_allseto_v1.11.ttf"
 
 ## 角色名称使用的字体。
-define gui.name_text_font = "方正小篆体.ttf"
+define gui.name_text_font = "包图小白体.ttf"
 
 ## 游戏外文本使用的字体。
 define gui.interface_text_font = "包图小白体.ttf"
