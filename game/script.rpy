@@ -44,6 +44,7 @@ image side iron = "side_iron.png"
 image side zj = "side_zj.png"
 image side rock = "side_rock.png"
 image side sage = "side_sage3.png"
+image l2d sage = "l2d_sage.png"
 image side knight = "side_knight.png"
 
 image bg main = "main_menu.png"
