@@ -8,7 +8,7 @@ define hb = Character("红白", color="#B93737", image="hb")
 define xq = Character("袭秋", color="#70e2b1", image="xq")
 define anoitos = Character("【路人】Anoitos", color="#212121", image="anoitos")
 define gz = Character("【路人】观众", color="#C11E32", image="gz")
-define gambler = Character("【路人】gambler:", color="#533D25", image="gambler")
+define gambler = Character("【路人】gambler", color="#533D25", image="gambler")
 define bread = Character("【路人】面包", color="#8C95B4", image="bread")
 define wolf = Character("【路人】狼崽桑", color="#FEBCCA", image="wolf")
 define haruki = Character("高桥", color="#000c4e", image="haruki")
@@ -21,6 +21,8 @@ define rock = Character("洛克", color="#8B5F11", image="rock")
 define sage = Character("桑吉", color="#E7374E", image="sage")
 define knight = Character("骑士", color="#fda0a5", image="knight")
 define door = Character("神秘文字", color="#E7374E")
+define ss = Character("SageSoft", color="#E7374E", image="ss")
+define nwc = Character("Nya-WSL", color="#E7374E", image="nwc")
 
 image sage_i = "sage.png"
 
@@ -46,6 +48,8 @@ image side rock = "side_rock.png"
 image side sage = "side_sage3.png"
 image l2d sage = "l2d_sage.png"
 image side knight = "side_knight.png"
+image side ss = "side_ss.png"
+image side nwc = "side_nwc.png"
 
 image bg main = "main_menu.png"
 image bg gym = "gym.jpg"

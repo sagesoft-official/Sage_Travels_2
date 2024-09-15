@@ -21,7 +21,7 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "v2.0.0-beta"
+define config.version = "v2.0.0"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
@@ -40,7 +40,7 @@ define gui.about = _p("""
 
 现实中真的有楠桐语录
 
-小生物在不换引擎的情况下不会出3
+小生物不会出3
 
 这个游戏的原始版本是纯DOS窗口的文字游戏
 
@@ -59,8 +59,6 @@ EA版的第三章使用了大量的新功能和新机制，但因为各种原因
 你可以在GitHub的main分支中找到未删除的部分EA版源码并在Early_Access分支中找到完整的源码
 
 原定的第三章剧情大约有三万字，但由于时间关系，并且剧情无法大规模删减，最终重写了大约有三千字的新剧情
-
-我们计划将在每年的3月发布一个新的DLC，内容包括但不限于正传序章或与正传毫无关系的剧情
 
 Together we make games and memes better.
 
