@@ -1,4 +1,4 @@
-# Sage's Travels 2 Early Access
+# Sage's Travels 2
 
 小生物历险记2
 
