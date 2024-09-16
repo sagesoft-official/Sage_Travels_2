@@ -113,7 +113,7 @@ label p3_start:
     "到第二年的端午，又说"
     "老板" "小晨还欠了张教练一次健身指导的钱呢！"
     "到了中秋可是没有说，再到年底也没有看见他。"
-    "我到现在终于没有见。"
+    "我到现在终是没有见。"
     "大约小晨的确是被关地下室当弱受了。"
     "... ..."
     play music "<from 13>audio/p1.mp3"
@@ -121,7 +121,7 @@ label p3_start:
     "... ..."
     scene main_menu
     ss "小生物的故事到这里已经是Bed Ending，但我们由衷希望未来桑吉的故事会是Happy Ending."
-    ss "很遗憾，2024年9月30日，SageSoft宣布解散。"
+    ss "很遗憾，2024年9月，SageSoft宣布解散。"
     ss "Together we make games and memes better."
     nwc "We are all stories in the end."
     "Thank you for playing."
