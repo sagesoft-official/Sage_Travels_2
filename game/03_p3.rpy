@@ -49,19 +49,13 @@ label p3_start:
     "小生物略略点一点头。"
     asahi "老二次元......我便考你一考。咒术回战里的虎杖悠仁，和谁的CP最火？"
     "小生物心想"
-    show l2d sage at left
     sage "原来是炒热圈的B，也不嫌自己恶心？"
-    hide l2d sage
     "便回过脸去，不再理会。小晨等了许久，便恳切的说到"
     asahi "不知道吧？......我教给你！记着！冷圈应该记着。将来做太太的时候，产粮要用"
     "小生物想"
-    show l2d sage at left
     sage "我本身就是在做产冷圈粮的太太了，甚至小黄粮也能产，虽然大多是自娱自乐"
-    hide l2d sage
     "又好笑，又不耐烦，懒懒的答他道"
-    show l2d sage at left
     sage "谁要你教，不就是你们这帮热圈粉喜欢把他和任何男性放一块搞基卖腐么？"
-    hide l2d sage
     "小晨显出极高兴的样子，将两个指头的延长甲敲着前台，点头说"
     asahi "对呀对呀！......虎杖还有几对冷门CP，你知道么？"
     "小生物愈发不耐烦了，努着嘴走远。小晨刚用指甲蘸了柠檬水，想在吧台上写字，见小生物毫不热心，便叹了一口气，显出极其惋惜的样子。"
@@ -117,10 +111,10 @@ label p3_start:
     "大约小晨的确是被关地下室当弱受了。"
     "... ..."
     play music "<from 13>audio/p1.mp3"
+    scene main_menu
     "故事的最后，小晨再也没有出现。"
     "... ..."
-    scene main_menu
-    ss "小生物的故事到这里已经是Bed Ending，但我们由衷希望未来桑吉的故事会是Happy Ending."
+    ss "小生物的故事到这里已经算是Bed Ending了，但我们希望未来桑吉的故事会是Happy Ending!"
     ss "很遗憾，2024年9月，SageSoft宣布解散。"
     ss "Together we make games and memes better."
     nwc "We are all stories in the end."
